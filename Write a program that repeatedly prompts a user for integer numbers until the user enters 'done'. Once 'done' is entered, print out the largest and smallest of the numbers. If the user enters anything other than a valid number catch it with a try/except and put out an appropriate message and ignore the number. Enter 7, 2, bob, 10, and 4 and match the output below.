@@ -1,0 +1,27 @@
+num1=[]
+while True :
+    num = input("Enter a integer ")
+    num1.append(num)
+    try :
+        num == "bob"
+        if num =="bob":
+            print("Invalid input") 
+            num1.remove("bob")
+    except :
+        num1.remove("bob")
+    if num =="done":
+        num1.remove("done")
+        break
+#print(num1)
+#print(type(num1))
+#print(num1)
+int_list = map(int,num1)
+int_list=list(int_list)
+#print(int_list)
+
+# Largest number
+print("Maximum is", max(int_list))
+
+# Smallest number
+print("Minimum is", min(int_list))
+    
